@@ -3,7 +3,7 @@
 > **供应链 / 供应商管理 AI SKILL 集** — 天眼查 OpenAPI + MCP 协议驱动的 6 个采购向 SKILL（含建筑工程招投标）
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
-[![MCP](https://img.shields.io/badge/MCP-TYC%20天眼查-orange.svg)](https://agent.tianyancha.com)
+[![MCP](https://img.shields.io/badge/MCP-TYC%20天眼查-orange.svg)](https://ai.tianyancha.com)
 
 ---
 
@@ -46,15 +46,15 @@
 ### 方式 A · bash 一键脚本（推荐 · 30 秒搞定）
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/tyc-opensource/tyc-supply-chain/main/install_tyc_mcp.sh)
+bash <(curl -sL https://raw.githubusercontent.com/tyc-tech/tyc-supply-chain/main/install_tyc_mcp.sh)
 ```
 
-脚本会：① 提示输入 `TYC_MCP_API_KEY`（[申请](https://agent.tianyancha.com)）→ ② 自动写入 `~/.claude/.mcp.json` → ③ 复制 SKILL 到 `~/.claude/skills/tyc-*` → ④ 复制命令到 `~/.claude/commands/`。完成后**重启 Claude Code** 即可使用。
+脚本会：① 提示输入 `TYC_MCP_API_KEY`（[申请](https://ai.tianyancha.com)）→ ② 自动写入 `~/.claude/.mcp.json` → ③ 复制 SKILL 到 `~/.claude/skills/tyc-*` → ④ 复制命令到 `~/.claude/commands/`。完成后**重启 Claude Code** 即可使用。
 
 ### 方式 B · 本地 plugin-dir（开发 / 调试）
 
 ```bash
-git clone https://github.com/tyc-opensource/tyc-supply-chain.git
+git clone https://github.com/tyc-tech/tyc-supply-chain.git
 cd tyc-supply-chain
 export TYC_MCP_API_KEY="your_api_key_here"
 claude --plugin-dir .
